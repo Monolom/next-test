@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
   .logo {
     display: block;
     color: white;
@@ -78,6 +81,7 @@
   }
 }
 .page-wrapper {
+  margin-top: 100px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -151,28 +155,30 @@
 }
 
 @media (max-width: 1200px) {
-  .pagination-wraper {
-    .pagination-head {
-      .pagination-head__item {
-        .select-wrapper {
+  .page-wrapper {
+    .pagination-wraper {
+      .pagination-head {
+        .pagination-head__item {
+          .select-wrapper {
+          }
         }
       }
-    }
-    .pagination-bottom {
-      .pagination-bottom-wrapper {
-        display: flex;
-        flex-direction: column;
-        .nav-section {
-          margin-bottom: 4px;
-          justify-content: center;
+      .pagination-bottom {
+        .pagination-bottom-wrapper {
           display: flex;
-        }
-        .page-link-wrapper {
-          display: none;
-        }
-        .page-link-wrapper.mobile {
-          display: flex;
-          margin-bottom: 4px;
+          flex-direction: column;
+          .nav-section {
+            margin-bottom: 4px;
+            justify-content: center;
+            display: flex;
+          }
+          .page-link-wrapper {
+            display: none;
+          }
+          .page-link-wrapper.mobile {
+            display: flex;
+            margin-bottom: 4px;
+          }
         }
       }
     }
